@@ -59,3 +59,18 @@ sr.reveal(".home__img, .about__subtitle, .about__text, .skills__img", {
 });
 sr.reveal(".home__social-icon", { interval: 200 });
 sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
+
+document
+  .getElementById("send-button")
+  .addEventListener("click", async function () {
+    let form = document.getElementById("contact-form");
+    let formData = new FormData(form);
+
+    let response = await fetch("./php/send_email.php", {
+      method: "POST",
+      body: formData,
+    });
+
+    let result = await response.text();
+    document.getElementById("responseMessage").innerText = result; // Exibe a resposta do servidor
+  });
