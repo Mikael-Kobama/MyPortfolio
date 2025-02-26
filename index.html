@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,32 +12,32 @@
       rel="stylesheet"
     />
 
-    <title>Portfolio website complete</title>
+    <title>Website de Portfólio Completo</title>
   </head>
   <body>
     <!--===== HEADER =====-->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          <a href="#" class="nav__logo">Marlon</a>
+          <a href="#" class="nav__logo">Mikael Kobama</a>
         </div>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
+              <a href="#home" class="nav__link active-link">Início</a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+              <a href="#about" class="nav__link">Sobre</a>
             </li>
             <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
+              <a href="#skills" class="nav__link">Habilidades</a>
             </li>
             <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
+              <a href="#work" class="nav__link">Trabalhos</a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+              <a href="#contact" class="nav__link">Contato</a>
             </li>
           </ul>
         </div>
@@ -53,21 +53,41 @@
       <section class="home bd-grid" id="home">
         <div class="home__data">
           <h1 class="home__title">
-            Hi,<br />I'am <span class="home__title-color">Marlon</span><br />
-            Web Designer
+            Olá,<br />Eu sou <span class="home__title-color">Mikael Kobama</span
+            ><br />
+            Desenvolvedor
+            <br />
+            Full Stack
           </h1>
 
-          <a href="#" class="button">Contact</a>
+          <a href="#" class="button">Contato</a>
         </div>
 
         <div class="home__social">
-          <a href="" class="home__social-icon"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="" class="home__social-icon"
-            ><i class="bx bxl-behance"></i
-          ></a>
-          <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+          <div class="home__social-icons">
+            <!-- Ícones de telefone e e-mail -->
+            <a href="tel:+1234567890" class="home__social-icon phone">
+              <i class="bx bxs-phone"></i>
+              +55 (11)95109-5489
+            </a>
+            <a href="mailto:example@email.com" class="home__social-icon email">
+              <i class="bx bxs-envelope"></i>
+              kobama.mikael@gmail.com
+            </a>
+
+            <!-- Ícones de GitHub e LinkedIn -->
+            <a href="https://github.com" class="home__social-icon github">
+              <i class="bx bxl-github"></i>
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              class="home__social-icon linkedin"
+            >
+              <i class="bx bxl-linkedin"></i>
+              LinkedIn
+            </a>
+          </div>
         </div>
 
         <div class="home__img">
@@ -96,59 +116,80 @@
           </svg>
         </div>
       </section>
-      <!--===== ABOUT =====-->
+
+      <!--===== SOBRE =====-->
       <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
+        <h2 class="section-title">Sobre</h2>
 
         <div class="about__container bd-grid">
           <div>
-            <h2 class="about__subtitle">I'am Marlon</h2>
+            <h2 class="about__subtitle">Eu sou Mikael Kobama</h2>
             <p class="about__text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat
-              ut voluptates soluta, aut earum nemo recusandae cumque
-              perferendis! Recusandae alias accusamus atque.
+              Sou um desenvolvedor Full Stack Júnior com experiência no
+              desenvolvimento de aplicações web. Tenho conhecimento em React e
+              Next no front-end, e já trabalhei com Node.js, Prisma, Biome e
+              Express no back-end. Além disso, sou familiarizado com MongoDB e
+              tenho uma boa base em estruturas de dados e Scrum.
             </p>
           </div>
         </div>
       </section>
 
-      <!--===== SKILLS =====-->
+      <!--===== HABILIDADES =====-->
       <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title">Habilidades</h2>
 
         <div class="skills__container bd-grid">
           <div>
-            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <h2 class="skills__subtitle">Habilidades Profissionais</h2>
             <p class="skills__text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-              optio id vero amet, alias architecto consectetur error eum eaque
-              sit.
+              Aqui estão algumas das minhas principais habilidades no
+              desenvolvimento web.
             </p>
             <div class="skills__data">
               <div class="skills__names">
-                <i class="bx bxl-html5 skills__icon"></i>
-                <span class="skills__name">HTML5</span>
+                <i class="bx bxl-react skills__icon"></i>
+                <span class="skills__name">React</span>
               </div>
-              <div class="skills__bar skills__html"></div>
+              <div class="skills__bar skills__react"></div>
               <div>
-                <span class="skills__percentage">95%</span>
+                <span class="skills__percentage">80%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-file-js skills__icon"></i>
+                <span class="skills__name">Next</span>
+              </div>
+              <div class="skills__bar skills__next"></div>
+              <div>
+                <span class="skills__percentage">75%</span>
               </div>
             </div>
             <div class="skills__data">
               <div class="skills__names">
                 <i class="bx bxl-css3 skills__icon"></i>
-                <span class="skills__name">CSS3</span>
+                <span class="skills__name">Tailwind CSS</span>
               </div>
               <div class="skills__bar skills__css"></div>
               <div>
-                <span class="skills__percentage">85%</span>
+                <span class="skills__percentage">65%</span>
               </div>
             </div>
             <div class="skills__data">
               <div class="skills__names">
                 <i class="bx bxl-javascript skills__icon"></i>
-                <span class="skills__name">JAVASCRIPT</span>
+                <span class="skills__name">JavaScript</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <span class="skills__percentage">80%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-nodejs skills__icon"></i>
+                <span class="skills__name">Node.js</span>
               </div>
               <div class="skills__bar skills__js"></div>
               <div>
@@ -157,12 +198,12 @@
             </div>
             <div class="skills__data">
               <div class="skills__names">
-                <i class="bx bxs-paint skills__icon"></i>
-                <span class="skills__name">UX/UI</span>
+                <i class="bx bxs-server skills__icon"></i>
+                <span class="skills__name">Banco de Dados</span>
               </div>
-              <div class="skills__bar skills__ux"></div>
+              <div class="skills__bar skills__sql"></div>
               <div>
-                <span class="skills__percentage">85%</span>
+                <span class="skills__percentage">65%</span>
               </div>
             </div>
           </div>
@@ -173,54 +214,54 @@
         </div>
       </section>
 
-      <!--===== WORK =====-->
+      <!--===== TRABALHOS =====-->
       <section class="work section" id="work">
-        <h2 class="section-title">Work</h2>
+        <h2 class="section-title">Trabalhos</h2>
 
         <div class="work__container bd-grid">
           <a href="" class="work__img">
-            <p>Homepage de viagens</p>
+            <p>Homepage de Viagens</p>
             <img src="assets/img/work1.jpg" alt="" />
           </a>
           <a href="" class="work__img">
-            <p>Homepage de viagens</p>
+            <p>Homepage de Viagens</p>
             <img src="assets/img/work2.jpg" alt="" />
           </a>
           <a href="" class="work__img">
-            <p>Homepage de viagens</p>
+            <p>Homepage de Viagens</p>
             <img src="assets/img/work3.jpg" alt="" />
           </a>
           <a href="" class="work__img">
-            <p>Homepage de viagens</p>
+            <p>Homepage de Viagens</p>
             <img src="assets/img/work4.jpg" alt="" />
           </a>
           <a href="" class="work__img">
-            <p>Homepage de viagens</p>
+            <p>Homepage de Viagens</p>
             <img src="assets/img/work5.jpg" alt="" />
           </a>
           <a href="" class="work__img">
-            <p>Homepage de viagens</p>
+            <p>Homepage de Viagens</p>
             <img src="assets/img/work6.jpg" alt="" />
           </a>
         </div>
       </section>
 
-      <!--===== CONTACT =====-->
+      <!--===== CONTATO =====-->
       <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title">Contato</h2>
         <div class="contact__container bd-grid">
           <form id="contact-form" class="contact__form">
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Nome"
               class="contact__input"
               required
             />
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="E-mail"
               class="contact__input"
               required
             />
@@ -229,33 +270,40 @@
               cols="0"
               rows="10"
               class="contact__input"
+              placeholder="Envie sua mensagem para entrarmos em contato"
               required
             ></textarea>
+            <!-- Troquei o type="button" para type="submit" -->
             <input
-              type="button"
+              type="submit"
               value="Enviar"
               class="contact__button button"
-              id="send-button"
             />
           </form>
         </div>
       </section>
-      <p id="responseMessage"></p>
+      <p id="responseMessage" class="response-toast"></p>
     </main>
 
-    <!--===== FOOTER =====-->
+    <!--===== RODAPÉ =====-->
     <footer class="footer">
-      <p class="footer__title">Marlon</p>
+      <p class="footer__title">Mikael Kobama</p>
       <div class="footer__social">
         <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
         <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
       </div>
-      <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+      <p class="footer__copy">
+        &#169; Mikael Kobama. Todos os direitos reservados
+      </p>
     </footer>
 
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
