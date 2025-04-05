@@ -225,27 +225,27 @@ img {
   flex-direction: column;
   align-items: center;
   background-color: var(--primary-color); /* Azul escuro */
-  width: 295px;
+  width: 310px; /* Aumentado um pouco para a direita */
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  gap: 10px;
+  gap: 2px; /* Espaçamento vertical reduzido */
 }
 
 .home__social-icons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2px; /* Espaço entre os botões */
   width: 100%;
 }
 
 .home__social-icon {
   display: flex;
   align-items: center;
-  background-color: var(--secondary-color); /* Cor de fundo de cada item */
+  background-color: var(--light-blue); /* Azul mais claro */
   border-radius: 6px;
   padding: 10px 12px;
   font-size: 1rem;
-  color: var(--tertiary-color); /* Cor do texto e ícone */
+  color: var(--tertiary-color);
   transition: all 0.3s ease;
   text-decoration: none;
   gap: 8px;
@@ -265,7 +265,7 @@ img {
 .home__social-icon.email,
 .home__social-icon.github,
 .home__social-icon.linkedin {
-  background-color: var(--secondary-color); /* Mantém uma base comum */
+  background-color: var(--light-blue); /* Azul claro unificado */
 }
 
 .home__img {
